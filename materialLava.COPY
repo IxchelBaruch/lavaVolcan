@@ -1,0 +1,143 @@
+Begin Object Class=/Script/Engine.Material Name="Lava"
+   Begin Object Class=/Script/Engine.MaterialExpressionAdd Name="MaterialExpressionAdd_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionAdd Name="MaterialExpressionAdd_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDivide Name="MaterialExpressionDivide_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDivide Name="MaterialExpressionDivide_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDivide Name="MaterialExpressionDivide_3"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureCoordinate Name="MaterialExpressionTextureCoordinate_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureCoordinate Name="MaterialExpressionTextureCoordinate_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_4"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTime Name="MaterialExpressionTime_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTime Name="MaterialExpressionTime_1"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionAdd_0"
+      A=(Expression=MaterialExpressionDivide'"Lava:MaterialExpressionDivide_0"')
+      B=(Expression=MaterialExpressionTextureCoordinate'"Lava:MaterialExpressionTextureCoordinate_0"')
+      MaterialExpressionEditorX=240
+      MaterialExpressionEditorY=384
+      MaterialExpressionGuid=18588F6547B3AF51416AF0BC42085155
+      Material=Material'"Lava"'
+   End Object
+   Begin Object Name="MaterialExpressionAdd_1"
+      A=(Expression=MaterialExpressionDivide'"Lava:MaterialExpressionDivide_1"')
+      B=(Expression=MaterialExpressionTextureCoordinate'"Lava:MaterialExpressionTextureCoordinate_1"')
+      MaterialExpressionEditorX=304
+      MaterialExpressionEditorY=64
+      MaterialExpressionGuid=18588F6547B3AF51416AF0BC42085155
+      Material=Material'"Lava"'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_0"
+      R=3.000000
+      MaterialExpressionEditorX=688
+      MaterialExpressionEditorY=64
+      MaterialExpressionGuid=ED1C4B3746C1D23BA3F18E8A217FA7D1
+      Material=Material'"Lava"'
+   End Object
+   Begin Object Name="MaterialExpressionDivide_0"
+      A=(Expression=MaterialExpressionTime'"Lava:MaterialExpressionTime_0"')
+      ConstB=10.000000
+      MaterialExpressionEditorX=112
+      MaterialExpressionEditorY=288
+      MaterialExpressionGuid=D468AA9E4FA145DA2D9610B4F96C2CA8
+      Material=Material'"Lava"'
+   End Object
+   Begin Object Name="MaterialExpressionDivide_1"
+      A=(Expression=MaterialExpressionTime'"Lava:MaterialExpressionTime_1"')
+      ConstB=20.000000
+      MaterialExpressionEditorX=144
+      MaterialExpressionEditorY=16
+      MaterialExpressionGuid=D468AA9E4FA145DA2D9610B4F96C2CA8
+      Material=Material'"Lava"'
+   End Object
+   Begin Object Name="MaterialExpressionDivide_3"
+      A=(Expression=MaterialExpressionTextureSample'"Lava:MaterialExpressionTextureSample_0"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      MaterialExpressionEditorX=658
+      MaterialExpressionEditorY=192
+      MaterialExpressionGuid=020CB11848310ECA925456B05CCBD8DE
+      Material=Material'"Lava"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureCoordinate_0"
+      MaterialExpressionEditorY=400
+      MaterialExpressionGuid=9C385DF64F09488D95FE689BAA445120
+      Material=Material'"Lava"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureCoordinate_1"
+      MaterialExpressionEditorX=-64
+      MaterialExpressionEditorY=96
+      MaterialExpressionGuid=9C385DF64F09488D95FE689BAA445120
+      Material=Material'"Lava"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_0"
+      Coordinates=(Expression=MaterialExpressionAdd'"Lava:MaterialExpressionAdd_1"')
+      Texture=Texture2D'"/Game/StarterContent/Textures/T_Fire_Tiled_D.T_Fire_Tiled_D"'
+      MaterialExpressionEditorX=384
+      MaterialExpressionEditorY=-48
+      MaterialExpressionGuid=2C9EE0CF44587635C7F014B432237C8F
+      Material=Material'"Lava"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_4"
+      Coordinates=(Expression=MaterialExpressionAdd'"Lava:MaterialExpressionAdd_0"')
+      Texture=Texture2D'"/Game/VOLCAN/normalLava.normalLava"'
+      MaterialExpressionEditorX=400
+      MaterialExpressionEditorY=320
+      MaterialExpressionGuid=CA2FD1A24DE80257E0C4758435A05550
+      Material=Material'"Lava"'
+   End Object
+   Begin Object Name="MaterialExpressionTime_0"
+      MaterialExpressionEditorX=-64
+      MaterialExpressionEditorY=272
+      MaterialExpressionGuid=289785D94E2967143F8EB486B22B6B8F
+      Material=Material'"Lava"'
+   End Object
+   Begin Object Name="MaterialExpressionTime_1"
+      MaterialExpressionEditorX=-48
+      MaterialExpressionEditorY=-16
+      MaterialExpressionGuid=F48B896447927A2D1C54049696660B0A
+      Material=Material'"Lava"'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   BaseColor=(Expression=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_0"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Roughness=(Expression=MaterialExpressionConstant'"MaterialExpressionConstant_0"')
+   Normal=(Expression=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_4"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   EmissiveColor=(Expression=MaterialExpressionDivide'"MaterialExpressionDivide_3"')
+   EditorX=832
+   EditorY=-16
+   Expressions(0)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_0"'
+   Expressions(1)=MaterialExpressionConstant'"MaterialExpressionConstant_0"'
+   Expressions(2)=MaterialExpressionTime'"MaterialExpressionTime_0"'
+   Expressions(3)=MaterialExpressionTextureCoordinate'"MaterialExpressionTextureCoordinate_0"'
+   Expressions(4)=MaterialExpressionAdd'"MaterialExpressionAdd_0"'
+   Expressions(5)=MaterialExpressionDivide'"MaterialExpressionDivide_0"'
+   Expressions(6)=MaterialExpressionTime'"MaterialExpressionTime_1"'
+   Expressions(7)=MaterialExpressionTextureCoordinate'"MaterialExpressionTextureCoordinate_1"'
+   Expressions(8)=MaterialExpressionAdd'"MaterialExpressionAdd_1"'
+   Expressions(9)=MaterialExpressionDivide'"MaterialExpressionDivide_1"'
+   Expressions(10)=MaterialExpressionDivide'"MaterialExpressionDivide_3"'
+   Expressions(11)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_4"'
+   bCanMaskedBeAssumedOpaque=True
+   StateId=86AA965941CF4489C6E93FA51AB793EA
+   CachedExpressionData=(ReferencedTextures=(Texture2D'"/Game/StarterContent/Textures/T_Fire_Tiled_D.T_Fire_Tiled_D"',Texture2D'"/Game/VOLCAN/normalLava.normalLava"'),QualityLevelsUsed=(False,False,False,False))
+   ReferencedTextureGuids(0)=BDE60BD74B2D9EBBA5BDE682F1FF5EAC
+   ReferencedTextureGuids(1)=CD87BBF7494C920ACA25D7A133975C73
+   TextureStreamingDataVersion=1
+   TextureStreamingData(0)=(SamplingScale=1.000000,UVChannelIndex=0,TextureName="normalLava",TextureReference=/Game/VOLCAN/normalLava.normalLava)
+   TextureStreamingData(1)=(SamplingScale=1.000000,UVChannelIndex=0,TextureName="T_Fire_Tiled_D",TextureReference=/Game/StarterContent/Textures/T_Fire_Tiled_D.T_Fire_Tiled_D)
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'"SceneThumbnailInfoWithPrimitive_0"'
+   LightingGuid=4F147B9B427D5809AD8C7FA643693B67
+End Object
